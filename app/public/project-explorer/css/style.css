@@ -1,0 +1,29 @@
+.top {
+  color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.foot {
+  float: right;
+}
+span {
+  font-size: 20px;
+}
+h5 {
+  padding-top: 15px;
+}
+.shoot {
+  color: grey;
+}
+.width {
+  width: 500px;
+}
+.p-top {
+  padding-top: 9px;
+}
+.center {
+  text-align: center;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+       <!-- <header>
+           <h1>Project Explorer</h1>
+           <h2>One Stop Database for Academic Projects</h2>
+       </header>
+       <nav>
+           <a href="index.html">HOME</a>
+           <a href="project.html">PROJECTS</a>
+           <a href="login.html">LOGIN</a>
+           <a href="register.html">REGISTER</a>
+           <a href="createproject.html">SUBMIT</a>
+       </nav> -->
+       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Project Explorer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto w-75">
+            <form class="form-inline my-2 my-lg-0" name="searchForm">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Submit <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <a class="nav-link top" href="register.html">Sign up<span class="sr-only">(current)</span></a>
+            <a class="nav-link top" href="login.html">Login <span class="sr-only">(current)</span></a>
+          </form>
+        </div>
+      </nav>
+       <main>
+        <form class="w-75 mx-auto">
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationDefault01">First name</label>
+              <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationDefault02">Last name</label>
+              <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" aria-describedby="emailHelp" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" placeholder="password" id="exampleInputPassword1" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <div class="form-group">
+                <label for="exampleInputname">Program</label>
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>Choose...</option>
+                  <option value="computer_science">Computer Science</option>
+                  <option value="computer_information_systems">Computer Information Systems</option>
+                  <option value="computer_technology">Computer Technology</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationDefault05">Matriculation number</label>
+              <input type="text" class="form-control" id="validationDefault05" placeholder="e.g. 17/2020" required>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationDefault04">Graduation Year</label>
+              <select class="custom-select" id="validationDefault04" required>
+                <option selected disabled value="">Choose...</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Sign Up</button>
+        </form>    
+
+        <!-- <div>
+                <label for="">Graduation Year:</label>
+                <select name="graduationYear" id="">
+                    <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                </select>
+               </div> -->
+              <!-- <script>
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Loop over them and prevent submission
+                  var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+              </script> -->
+            <!-- <form>
+                <div class="form-group">
+                  <label for="exampleInputname">First name</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First name" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your email address" aria-describedby="emailHelp">
+                  </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" placeholder="password" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputname">Program</label>
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                      <option selected>Choose...</option>
+                      <option value="computer_science">Computer Science</option>
+                      <option value="computer_information_systems">Computer Information Systems</option>
+                      <option value="computer_technology">Computer Technology</option>
+                    </select>
+                  </div>
+                
+                  <button type="submit" class="btn btn-primary">Sign Up</button>
+
+              </form> -->
+        </form>
+           <!-- <h1>Signup</h1>
+           <form action="">
+               <select name="program" id="">
+                    <option value="computer_science">c</option>
+                    <option value="computer_information_systems">Computer Information Systems</option>
+                    <option value="computer_technology">Computer Technology</option>
+                </select>
+            <div>
+                <label for="">FIRST NAME:</label>
+                <input type="text" placeholder="FIRST NAME" name="firstName" >
+               </div>
+               <div>
+                <label for="">LAST NAME:</label>
+                <input type="text" placeholder="LAST NAME" name="lastName" >
+               </div>
+               <div>
+                <label for="">Email Address:</label>
+                <input type="email" placeholder="Email Address" name="email" >
+               </div>
+               <div>
+                <label for="">password:</label>
+                <input type="password" placeholder="password" name="password" >
+               </div>
+               <div>
+                <label for="">MATRIC NUMBER:</label>
+                <input type="text" placeholder="MATRIC NUMBER" name="matricNumber" >
+               </div>
+               <div>
+                <label for="">PROGRAM:</label>
+                <select name="program" id="">
+                    <option value="computer_science">Computer Science</option>
+                    <option value="computer_information_systems">Computer Information Systems</option>
+                    <option value="computer_technology">Computer Technology</option>
+                </select>
+                
+               </div>
+               <div>
+                <label for="">Graduation Year:</label>
+                <select name="graduationYear" id="">
+                    <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                </select>
+               </div>
+               <button>submit</button>
+           </form> -->
+           <footer class="bg-light">
+            <p class="foot">Project Explorer @2020. Edconnect</p>
+          </footer>
+       </main>
+        <script src="" async defer></script>
+    </body>
+</html>
