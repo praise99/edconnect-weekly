@@ -61,19 +61,19 @@
                 <form class="mx-auto">
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Project name</label>
-                        <input class="form-control form-control width" type="text" placeholder="Enter project name">
+                        <input class="form-control form-control width" type="text" placeholder="Enter project name" name="name">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Project abstract</label>
-                        <textarea class="form-control width" id="exampleFormControlTextarea1" placeholder="Project 2 is interestung" rows="3"></textarea>
+                        <textarea class="form-control width" name="abstract" id="exampleFormControlTextarea1" placeholder="Project 2 is interestung" rows="3"></textarea>
                       </div>
                       <div class="form-group">
                         <label for="exampleFormControlInput1">Author(s)</label>
-                        <input class="form-control form-control width" type="text" placeholder="Enter author names(seperated by comma)">
+                        <input class="form-control form-control width" name="authors" type="text" placeholder="Enter author names(seperated by comma)">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Tag(s)</label>
-                        <input class="form-control form-control width" type="text" placeholder="Use # to tag projects with different topics(e.g #javascript, #mongodb">   
+                        <input class="form-control form-control width" name="tags" type="text" placeholder="Use # to tag projects with different topics(e.g #javascript, #mongodb">   
                     </div>
                     
                     <button type="submit" class="btn btn-primary">Continue</button>
@@ -85,7 +85,7 @@
                        <form>
                         <div class="form-row align-items-center">
                           <div class="col-sm-9 my-1">
-                            <input type="text" class="form-control" id="inlineFormInputName" placeholder="click to open file browser">
+                            <input type="text" name="projectFile" class="form-control" id="inlineFormInputName" placeholder="click to open file browser">
                           </div>
                           <div class="col-auto my-1">
                             <button type="submit" class="btn btn-primary">Browse</button>
